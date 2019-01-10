@@ -1,0 +1,120 @@
+   This paper to recommend \[ToolFk\] is a programmers often use a free online test kit, ToolFk feature is focused on everyday programmer development tools, without having to install any software, as long as the content execution affixed by a button, able to obtain the contents of the desired results.ToolFk also supports   [BarCode Barcode generated online ](https://www.toolfk.com/tool-generator-barcode "BarCode Barcode generated online"),  [QueryList collector ](https://www.toolfk.com/tool-run-reptile "QueryList collector"),  [PHP code is run online ](https://www.toolfk.com/tool-online-runphp "PHP code online operation"),  [PHP confusion, encryption, decryption ](https://www.toolfk.com/tool-convert-php "PHP confusion, encryption, decryption"),  [Python code is run online ](https://www.toolfk.com/tool-online-runpython "Python code runs online"), [JavaScript online operation ](https://www.toolfk.com/tool-online-runjs "JavaScript online operation"),[YAML formatting tools](https://www.toolfk.com/tool-format-yaml "YAML formatting tools") , [HTTP simulation query tool ](https://www.toolfk.com/tool-online-http "HTTP query tool simulation"), [HTML online toolbox ](https://www.toolfk.com/tool-format-html "HTML Online Toolbox"), [JavaScript online Toolbox ](https://www.toolfk.com/tool-format-javascript "JavaScript toolkit online"),[CSS online toolbox ](https://www.toolfk.com/tool-format-css "CSS Online Toolbox"), [JSON online toolbox ](https://www.toolfk.com/tool-format-json "JSON Online Toolbox"), [unixtime timestamp conversion ](https://www.toolfk.com/tool-convert-unixtime "Unixtime timestamp conversion"), [Base64 / the URL of / native2ascii conversion ](https://www.toolfk.com/tool-encdec-transform "Base64 / URL / Native2Ascii conversion"), [CSV conversion kit ](https://www.toolfk.com/tool-convert-csv "CSV Converter Toolkit"), [XML online toolbox ](https://www.toolfk.com/tool-format-xml "XML Online Toolbox"), [the WebSocket online tools ](https://www.toolfk.com/tool-online-runwebsocket "WebSocket online tools"), [Markdown online toolbox ](https://www.toolfk.com/tool-convert-markdown "Markdown Online Toolbox"), [Htaccess2nginx conversion](https://www.toolfk.com/tool-convert-htaccess2nginx "Htaccess2nginx conversion"), [Hex conversion online ](https://www.toolfk.com/tool-convert-hexadecimal "Online hex conversion"), [online encryption toolkit ](https://www.toolfk.com/tool-convert-encryption "Online Encryption Toolkit"),[online pseudo-original tools ](https://www.toolfk.com/tool-convert-text "Online pseudo-original tool"), [online APK decompile ](https://www.toolfk.com/tool-decompile-apk "Online APK decompile"), [online web screenshot tool ](https://www.toolfk.com/tool-screen-captures "Online web screenshot tool"), [online random password generation ](https://www.toolfk.com/tool-password-generator "Online Random Password Generator"), [online generate two-dimensional code qrcode ](https://www.toolfk.com/tool-generate-qrcode "Online generated two-dimensional code Qrcode"), [online Crontab Expression Builder ](https://www.toolfk.com/tool-generate-crontab "Online Crontab Expression Builder"),[the online short URL Generator ](https://www.toolfk.com/tool-short-url "Online Short URL Generator"), [Online calculator tool ](https://www.toolfk.com/tool-game-calculator "Online calculator tool"). And more than 20 daily programmer development tools, can be considered a very comprehensive website programmer's toolbox.
+
+Site name: ToolFk  
+website links: [https://www.toolfk.com/](https://www.toolfk.com/)  
+Tools link: [https://www.toolfk.com/tool-online-runwebsocket](https://www.toolfk.com/tool-online-runwebsocket)
+
+Teaching Code
+-------------
+
+This tool \[WebScoket online testing tool\]? Using JavaScript code. Web page as follows
+
+STEP 1
+
+[![](https://4.bp.blogspot.com/-zJnYgkhL-Ok/XA8tyYWC4XI/AAAAAAAAAGQ/vuY5fvqzYZw8sEeEUttlx7xzVrRZLuVQACPcBGAYYCw/s1600/websocket.png)](https://4.bp.blogspot.com/-zJnYgkhL-Ok/XA8tyYWC4XI/AAAAAAAAAGQ/vuY5fvqzYZw8sEeEUttlx7xzVrRZLuVQACPcBGAYYCw/s1600/websocket.png)
+
+  
+
+STEP 2
+
+? THE CORE CODE IS AS FOLLOWS
+
+```
+function StartWebSocket (wsUri) {
+    websocket = new WebSocket (wsUri);
+    websocket.onopen = function (evt) {onOpen (evt)};
+    websocket.onclose = function (evt) {onClose (evt)};
+    websocket.onmessage = function (evt) {onMessage (evt)};
+    websocket.onerror = function (evt) {onError (evt)};}
+
+function onOpen (evt) {
+    writeToScreen ( "<span style = 'color: red'> @ lang ( 'toolfk.lang_text_connect_suc') </ span>");
+}
+function onClose (evt) {
+    writeToScreen ( "<span style = 'color: red'> @ lang ( 'toolfk.lang_text_connect_close') </ span>");
+    websocket.close ();
+}
+function onMessage (evt) {
+    writeToScreen ( '<span style = "color: blue"> @ lang (' toolfk.lang_text_server_rep ') & nbsp;' + formatDate (new Date ()) + '</ span> <br/> <span class = "bubble" > '+ evt.data +' </ span> ');
+}
+function onError (evt) {
+    writeToScreen ( '<span style = "color: red;"> @ lang (' toolfk.lang_text_send_error '): </ span>' + evt.data);
+}
+function formatDate (now) {
+    var year = now.getFullYear ();
+    var month = now.getMonth () + 1;
+    var date = now.getDate ();
+    var hour = now.getHours ();
+    var minute = now.getMinutes ();
+    var second = now.getSeconds ();
+    return year + "-" + (month = month <10 ( "0" + month):? month) + "-" + (? date = date <10 ( "0" + date): date) + "" + ( hour = hour <10 ( "0" + hour):? hour) + ":" + (minute = minute <10 ( "0" + minute?): minute) + ":" + (second = second <10? ( "0" + second): second);
+}
+function writeToScreen (message) {
+    var div = "<div class = 'newmessage'>" + message + "</ div>";
+    var d = $ ( "# output");
+    var d = d [0];
+    var doScroll = d.scrollTop == d.scrollHeight - d.clientHeight;
+    $ ( "# Output") append (div).;
+    if (doScroll) {
+        d.scrollTop = d.scrollHeight - d.clientHeight;
+    }
+}
+
+$ (Function () {
+    $ ( ". Btn-open"). Click (function () {
+        var wsaddr = $ ( "# wsaddr") val ().;
+        if (wsaddr == '') {
+            layer.msg ( "@ lang ( 'toolfk.lang_text_websocket_empty')");
+            return false;
+        }
+        StartWebSocket (wsaddr);
+    });
+
+    $ ( ". Btn-close"). Click (function () {
+        websocket.close ();
+    });
+
+    $ ( ". Btn-clear"). Click (function () {
+        . $ ( "# Wsaddr") val ( "");
+        $ ( "# Output") empty ().;
+    });
+    $ ( ". Btn-demo"). Click (function () {
+        $ ( "# Wsaddr") val ($ (this) .data ( "url")).;
+    });
+
+    $ ( ". Btn-send"). Click (function () {
+        var message = $ ( "# message") val ().;
+        if (message == '') {
+            layer.msg ( "@ lang ( 'toolfk.lang_text_send_address')");
+            $ ( "# Message") focus ().;
+            return false;
+        }
+        if (typeof websocket === "undefined") {
+            layer.msg ( "@ lang ( 'toolfk.lang_text_send_fail')");
+            return false;
+        }
+        if (websocket.readyState == 3) {
+            layer.msg ( "@ lang ( 'toolfk.lang_text_close_suc')");
+            return false;
+        }
+        . $ ( "# Message") val ( '');
+        writeToScreen ( '<span style = "color: green"> @ lang (' toolfk.lang_text_send_info_ok ') & nbsp;' + formatDate (new Date ()) + '</ span> <br/>' + message);
+        websocket.send (message);
+    })
+});
+```
+  
+
+It is worth a try for three reasons:
+------------------------------------
+
+1.  Integrate various programmers often used in development and testing tools.
+    
+2.  Simple and beautiful atmosphere of the site pages
+    
+3.  Online support formatting code execution, APK online decompile, online high-strength password generator, two dozen screenshots online web tools service
+    
+4.  Also recommend its sister network  [www.videofk.com](http://www.videofk.com/)  video download Toolbox 
+    
+
+This link: [http://www.hihubs.com/article/373](http://www.hihubs.com/article/373)
