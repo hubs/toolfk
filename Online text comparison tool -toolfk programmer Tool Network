@@ -1,0 +1,43 @@
+      This paper to recommend \[ToolFk\] is a programmers often use a free online test kit, ToolFk feature is focused on everyday programmer development tools, without having to install any software, as long as the content execution affixed by a button, able to obtain the contents of the desired results.ToolFk also supports   [BarCode Barcode generated online ](https://www.toolfk.com/tool-generator-barcode "BarCode Barcode generated online"),  [QueryList collector ](https://www.toolfk.com/tool-run-reptile "QueryList collector"),  [PHP code is run online ](https://www.toolfk.com/tool-online-runphp "PHP code online operation"),  [PHP confusion, encryption, decryption ](https://www.toolfk.com/tool-convert-php "PHP confusion, encryption, decryption"),  [Python code is run online ](https://www.toolfk.com/tool-online-runpython "Python code runs online"), [JavaScript online operation ](https://www.toolfk.com/tool-online-runjs "JavaScript online operation"),[YAML formatting tools](https://www.toolfk.com/tool-format-yaml "YAML formatting tools") , [HTTP simulation query tool ](https://www.toolfk.com/tool-online-http "HTTP query tool simulation"), [HTML online toolbox ](https://www.toolfk.com/tool-format-html "HTML Online Toolbox"), [JavaScript online Toolbox ](https://www.toolfk.com/tool-format-javascript "JavaScript toolkit online"),[CSS online toolbox ](https://www.toolfk.com/tool-format-css "CSS Online Toolbox"), [JSON online toolbox ](https://www.toolfk.com/tool-format-json "JSON Online Toolbox"), [unixtime timestamp conversion ](https://www.toolfk.com/tool-convert-unixtime "Unixtime timestamp conversion"), [Base64 / the URL of / native2ascii conversion ](https://www.toolfk.com/tool-encdec-transform "Base64 / URL / Native2Ascii conversion"), [CSV conversion kit ](https://www.toolfk.com/tool-convert-csv "CSV Converter Toolkit"), [XML online toolbox ](https://www.toolfk.com/tool-format-xml "XML Online Toolbox"), [the WebSocket online tools ](https://www.toolfk.com/tool-online-runwebsocket "WebSocket online tools"), [Markdown online toolbox ](https://www.toolfk.com/tool-convert-markdown "Markdown Online Toolbox"), [Htaccess2nginx conversion](https://www.toolfk.com/tool-convert-htaccess2nginx "Htaccess2nginx conversion"), [Hex conversion online ](https://www.toolfk.com/tool-convert-hexadecimal "Online hex conversion"), [online encryption toolkit ](https://www.toolfk.com/tool-convert-encryption "Online Encryption Toolkit"),[online pseudo-original tools ](https://www.toolfk.com/tool-convert-text "Online pseudo-original tool"), [online APK decompile ](https://www.toolfk.com/tool-decompile-apk "Online APK decompile"), [online web screenshot tool ](https://www.toolfk.com/tool-screen-captures "Online web screenshot tool"), [online random password generation ](https://www.toolfk.com/tool-password-generator "Online Random Password Generator"), [online generate two-dimensional code qrcode ](https://www.toolfk.com/tool-generate-qrcode "Online generated two-dimensional code Qrcode"), [online Crontab Expression Builder ](https://www.toolfk.com/tool-generate-crontab "Online Crontab Expression Builder"),[the online short URL Generator ](https://www.toolfk.com/tool-short-url "Online Short URL Generator"), [Online calculator tool](https://www.toolfk.com/tool-game-calculator "Online calculator tool") , [Linux common commands Daquan](https://www.toolfk.com/tool-find-linux "https://www.toolfk.com/tool-find-linux") , [online text comparison tool](https://www.toolfk.com/tool-online-difftext "https://www.toolfk.com/tool-online-difftext") , [online mind mapping tools](https://www.toolfk.com/tool-online-mind "https://www.toolfk.com/tool-online-mind") , [online database design tool](https://www.toolfk.com/tool-online-designer "https://www.toolfk.com/tool-online-designer") , [free CDN acceleration service](https://www.toolfk.com/tool-online-cdnjs "https://www.toolfk.com/tool-online-cdnjs") , [online stress test tool ](https://www.toolfk.com/tool-online-bench "https://www.toolfk.com/tool-online-bench"). And more than 20 daily programmer development tools, can be considered a very comprehensive website programmer's toolbox.
+
+  
+
+Site name: ToolFk  
+website links: [https://www.toolfk.com/](https://www.toolfk.com/)  
+Tools link: [https://www.toolfk.com/tool-online-difftext](https://www.toolfk.com/tool-online-difftext)
+
+? Teaching Code
+---------------
+
+This tool \[online text comparison tool\]?-Dependent code base is http://www.mergely.com/editor
+
+STEP 1
+
+[![](https://3.bp.blogspot.com/-TIL5mf_1vKQ/XA8tr-52WbI/AAAAAAAAAGQ/ZSpGMgINGrU0OOV0R0YsrGhQn634KvOOACPcBGAYYCw/s1600/diff.png)](https://3.bp.blogspot.com/-TIL5mf_1vKQ/XA8tr-52WbI/AAAAAAAAAGQ/ZSpGMgINGrU0OOV0R0YsrGhQn634KvOOACPcBGAYYCw/s1600/diff.png)
+
+  
+
+STEP 2
+
+? THE CORE CODE IS AS FOLLOWS
+```
+$ (Function () {
+    $ ( '# Mergely'). Mergely ({
+        cmsettings: {
+            mode: "javascript",
+            readOnly: false,
+            lineWrapping: true
+        },
+        lhs: function (setValue) {
+            setValue ( '{{getToolWelcomeForEnv ()}}');
+        },
+        rhs: function (setValue) {
+            setValue ( 'Hello {{getToolWelcomeForEnv ()}}');
+        }
+    });
+});
+```
+
+  
+
+> This link: [http://www.hihubs.com/article/391](http://www.hihubs.com/article/391)
