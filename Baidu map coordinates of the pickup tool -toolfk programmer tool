@@ -1,0 +1,67 @@
+  This paper to recommend \[ToolFk\] is a programmers often use a free online test kit, ToolFk feature is focused on everyday programmer development tools, without having to install any software, as long as the content execution affixed by a button, able to obtain the contents of the desired results.ToolFk also supports   [BarCode Barcode generated online ](https://www.toolfk.com/tool-generator-barcode "BarCode Barcode generated online"),  [QueryList collector ](https://www.toolfk.com/tool-run-reptile "QueryList collector"),  [PHP code is run online ](https://www.toolfk.com/tool-online-runphp "PHP code online operation"),  [PHP confusion, encryption, decryption ](https://www.toolfk.com/tool-convert-php "PHP confusion, encryption, decryption"),  [Python code is run online ](https://www.toolfk.com/tool-online-runpython "Python code runs online"), [JavaScript online operation ](https://www.toolfk.com/tool-online-runjs "JavaScript online operation"),[YAML formatting tools](https://www.toolfk.com/tool-format-yaml "YAML formatting tools") , [HTTP simulation query tool ](https://www.toolfk.com/tool-online-http "HTTP query tool simulation"), [HTML online toolbox ](https://www.toolfk.com/tool-format-html "HTML Online Toolbox"), [JavaScript online Toolbox ](https://www.toolfk.com/tool-format-javascript "JavaScript toolkit online"),[CSS online toolbox ](https://www.toolfk.com/tool-format-css "CSS Online Toolbox"), [JSON online toolbox ](https://www.toolfk.com/tool-format-json "JSON Online Toolbox"), [unixtime timestamp conversion ](https://www.toolfk.com/tool-convert-unixtime "Unixtime timestamp conversion"), [Base64 / the URL of / native2ascii conversion ](https://www.toolfk.com/tool-encdec-transform "Base64 / URL / Native2Ascii conversion"), [CSV conversion kit ](https://www.toolfk.com/tool-convert-csv "CSV Converter Toolkit"), [XML online toolbox ](https://www.toolfk.com/tool-format-xml "XML Online Toolbox"), [the WebSocket online tools ](https://www.toolfk.com/tool-online-runwebsocket "WebSocket online tools"), [Markdown online toolbox ](https://www.toolfk.com/tool-convert-markdown "Markdown Online Toolbox"), [Htaccess2nginx conversion](https://www.toolfk.com/tool-convert-htaccess2nginx "Htaccess2nginx conversion"), [Hex conversion online ](https://www.toolfk.com/tool-convert-hexadecimal "Online hex conversion"), [online encryption toolkit ](https://www.toolfk.com/tool-convert-encryption "Online Encryption Toolkit"),[online pseudo-original tools ](https://www.toolfk.com/tool-convert-text "Online pseudo-original tool"), [online APK decompile ](https://www.toolfk.com/tool-decompile-apk "Online APK decompile"), [online web screenshot tool ](https://www.toolfk.com/tool-screen-captures "Online web screenshot tool"), [online random password generation ](https://www.toolfk.com/tool-password-generator "Online Random Password Generator"), [online generate two-dimensional code qrcode ](https://www.toolfk.com/tool-generate-qrcode "Online generated two-dimensional code Qrcode"), [online Crontab Expression Builder ](https://www.toolfk.com/tool-generate-crontab "Online Crontab Expression Builder"),[the online short URL Generator ](https://www.toolfk.com/tool-short-url "Online Short URL Generator"), [Online calculator tool](https://www.toolfk.com/tool-game-calculator "Online calculator tool") , [Linux common commands Daquan](https://www.toolfk.com/tool-find-linux "https://www.toolfk.com/tool-find-linux") , [online text comparison tool](https://www.toolfk.com/tool-online-difftext "https://www.toolfk.com/tool-online-difftext") , [online mind mapping tools](https://www.toolfk.com/tool-online-mind "https://www.toolfk.com/tool-online-mind") , [online database design tool](https://www.toolfk.com/tool-online-designer "https://www.toolfk.com/tool-online-designer") , [free CDN acceleration service](https://www.toolfk.com/tool-online-cdnjs "https://www.toolfk.com/tool-online-cdnjs") , [online stress test tool](https://www.toolfk.com/tool-online-bench "https://www.toolfk.com/tool-online-bench") , [map coordinates pick up tools](https://www.toolfk.com/tool-online-map "https://www.toolfk.com/tool-online-map") , [online SQL conversion tool ](https://www.toolfk.com/tool-convert-sql "https://www.toolfk.com/tool-convert-sql"). And more than 20 daily programmer development tools, can be considered a very comprehensive website programmer's toolbox.
+
+  
+
+Site name: ToolFk  
+website links: [https://www.toolfk.com/](https://www.toolfk.com/)  
+Tools link: [https://www.toolfk.com/tool-online-map](https://www.toolfk.com/tool-online-map)
+
+? Teaching Code
+---------------
+
+This tool \[Baidu map coordinates of the pickup tool -toolfk programmer tool\]? Dependent on Baidu Maps API, High German, QQ Maps API
+
+STEP 1
+
+[![](https://2.bp.blogspot.com/-0EAh8UejxqE/XA8tuSCGECI/AAAAAAAAAGA/c5xVgjw6jQoRliFHhhXHENOkqCQGCC1ZwCPcBGAYYCw/s1600/map.png)](https://2.bp.blogspot.com/-0EAh8UejxqE/XA8tuSCGECI/AAAAAAAAAGA/c5xVgjw6jQoRliFHhhXHENOkqCQGCC1ZwCPcBGAYYCw/s1600/map.png)
+
+  
+
+  
+
+STEP 2
+
+? THE CORE CODE IS AS FOLLOWS
+```
+$ Out_datas = [];
+#QQ
+$ Qq_map_url = "https://apis.map.qq.com/ws/coord/v1/translate?locations={$lat},{$lng}&type=3&key=XXXX";
+$ Qq_map = \ App \ Helper \ UtilsHelper :: curlGet ($ qq_map_url);
+if ($ qq_map [ 'status'] == 0) {
+    $ Location = @ $ qq_map [ "locations"] [0];
+    if ($ location) {
+        $ Lat_qq = $ location [ "lat"];
+        $ Lng_qq = $ location [ "lng"];
+        $ Out_datas [ "qq"] = "{$ lng_qq}, {$ lat_qq}";
+    }
+}
+
+#gaode https://lbs.amap.com/api/webservice/guide/api/convert
+$ Gaode_map_url = "https://restapi.amap.com/v3/assistant/coordinate/convert?locations={$lng},{$lat}&coordsys=baidu&output=json&key=YYY";
+$ Gaode_res = \ App \ Helper \ UtilsHelper :: curlGet ($ gaode_map_url);
+if ($ gaode_res [ "status"] == 1) {
+    $ Location = @ $ gaode_res [ "locations"];
+    if ($ location) {
+        $ Out_datas [ "gaode"] = $ location;
+    }
+}
+
+if ($ out_datas) {
+    
+    return \ App \ Helper \ UtilsHelper :: success ($ out_datas);
+}
+return \ App \ Helper \ UtilsHelper :: error ( "");
+```
+It is worth a try for three reasons:
+------------------------------------
+
+1.  Integrate various programmers often used in development and testing tools.
+    
+2.  Simple and beautiful atmosphere of the site pages
+    
+3.  Online support formatting code execution, APK online decompile, online high-strength password generator, two dozen screenshots online web tools service
+    
+4.  Also recommend its sister network  [www.videofk.com](http://www.videofk.com/)  video download Toolbox 
+    
+
+> This link: [http://www.hihubs.com/article/397](http://www.hihubs.com/article/397)
